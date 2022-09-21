@@ -1,0 +1,12 @@
+body{
+  background-color: rgb(252, 211, 157);
+  
+ 
+}
+.nav_icon:hover{
+  height: 38px;
+}
+.navbar{
+  background-image:  linear-gradient(rgba(247, 146, 15, 0.815), rgba(252, 211, 157, 0.854));
+  
+}
