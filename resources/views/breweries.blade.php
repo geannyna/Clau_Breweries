@@ -3,22 +3,27 @@
 @section('pagetitle','6 Cervecerías Artesanales en Madrid')  
 
 @section('content')
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
   @foreach ($breweries as $brewery )
-    {{-- <p> {{ $brewery[0] }} - {{ $brewery[1] }} - {{ $brewery[2] }} </p> --}}
-    <div class="col d-flex justify-content-center">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{ $brewery[1] }}</h5>
-          <p class="card-text">{{ $brewery[2] }}</p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <a class="btn btn-warning" href="/brewery/{{ $brewery[0]}}">Ver más</a>
-        </div>
-      </div>
-    </div>
+
+  <x-card title="{{ $brewery->name }}" 
+    body="{{ $brewery->description }}"
+    img="{{ $brewery->img }}"
+    place="{{ $brewery->place }}"
+    link="/brewery/{{ $brewery->id }}" text>
+  
+      {{-- <x-slot:text>
+        <p class="bg-green text-center"> Disclaimer / <b>Exención de responsabilidad </b></p>
+      </x-slot:text>   --}}
+    </x-card>
+
   @endforeach
  </div>
+ <br>
+ <div class="container-fluid">
+  <p class="text-center">
+    <a class="btn card_btn" href="{{ route ('brewery') }}">Crear nueva cervecería</a></p>
+ </div>
+
 @endsection
       
