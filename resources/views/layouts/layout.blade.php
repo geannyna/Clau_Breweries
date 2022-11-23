@@ -35,8 +35,8 @@
 
         <x-flash /> {{--  llamamos a flash.blade.php para hacer que el mensaje de comprobacion desaparezca --}}         
     
-           <div class="container-fluid pagetitle" style="width: 800px">
-                <h1 class="text-center"> @yield('pagetitle') </h1>
+           <div class="container-fluid">
+                {{-- <h1 class="text-center"> @yield('pagetitle') </h1> --}}
             @yield('content') 
             
           </div> 
