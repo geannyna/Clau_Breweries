@@ -3,7 +3,7 @@
 @section('pagetitle','Portal Cervecerías Artesanales en Madrid') 
 
 @section('content')
-<div class="container-fluid container-md row d-flex">
+<div class="container-fluid row d-flex justify-content-center">
 <div id="divQuote" class="w-100 p-2 text-center"><img class="home_img" src="{{ asset ('/img/beerAnim.gif')}}"></div>
 <br>
 

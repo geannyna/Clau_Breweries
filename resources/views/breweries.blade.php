@@ -1,7 +1,9 @@
 @extends('layouts.layout') 
 @section('title', 'Listado de cervecerías') 
 @section('pagetitle','6 Cervecerías Artesanales en Madrid')  
-
+<div >
+  <p class="pagetitle text-center">6 Cervecerías Artesanales en Madrid</p>
+</div>
 @section('content')
 <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
   @foreach ($breweries as $brewery )

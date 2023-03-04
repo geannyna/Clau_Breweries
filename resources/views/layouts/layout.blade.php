@@ -7,10 +7,13 @@
 
              <nav class="navbar navbar_head navbar-expand-lg fixed-top">
                 <div class="container-fluid">
+                  <a class="navbar-brand" href="{{ route ('home')}}"><img class="nav_icon" src="{{ asset ('/img/beer3.png')}}"></a>
                   <a class="navbar-brand" href="{{ route ('home')}}">Inicio</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                   
-                    <span><img class="nav_icon" src="{{ asset ('/img/beer3.png')}}"></span>
+                  
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {{-- <span><img class="nav_icon" src="{{ asset ('/img/beer3.png')}}"></span> --}}
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -26,7 +29,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-                      <button class="btn btn_back" type="submit">Buscar</button>
+                      <button class="btn btn_search" type="submit">Buscar</button>
                     </form>
                   </div>
                 </div>
@@ -35,7 +38,7 @@
 
         <x-flash /> {{--  llamamos a flash.blade.php para hacer que el mensaje de comprobacion desaparezca --}}         
     
-           <div class="container-fluid">
+           <div class="container-fluid mt-5 pt-5">
                 {{-- <h1 class="text-center"> @yield('pagetitle') </h1> --}}
             @yield('content') 
             

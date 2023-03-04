@@ -3,7 +3,7 @@
 
 <div class="container-fluid d-flex align-items-stretch">
   <div class="col d-flex justify-content-center">
-    <div class="card mi_card mt-4" style="width: 16rem;">
+    <div class="card mi_card mt-5" style="width: 25rem;">
       <img src="{{ $img }}" class="card-img-top card_img" alt="{{ $title }}">
       <div class="card-body d-flex row">
         <h5 class="card-title text-center">{{ $title }}</h5>
